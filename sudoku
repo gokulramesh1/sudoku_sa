@@ -115,7 +115,7 @@ def solve(board):
             board = [row[:] for row in best]
         for rw in board:
             print(rw)
-        print('\n')
+        print('')
         energy *= 0.999
     for rw in best:
         print(rw)
@@ -124,3 +124,4 @@ def solve(board):
 
 
 solve(b)
+
