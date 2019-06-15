@@ -102,7 +102,7 @@ def solve(board):
         if errors(board) < errors(best):
             best = [row[:] for row in board]
             check = new_board(board)
-            if errors(check) < errors(board):
+            if errors(check) <= errors(board):
                 board = check
             elif errors(check) > errors(board):
                 if random.random() < (1/diff(check, board))*energy*5:
